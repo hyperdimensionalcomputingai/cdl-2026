@@ -1,0 +1,52 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><title>shared-order-pattern</title><style>body{margin:0;background:#fcfcfa}svg{display:block}text{font-family:Arial,sans-serif;fill:#293342}.prop{font-family:Menlo,monospace;font-size:16px;fill:#45515e}.rel{font-family:Menlo,monospace;font-size:16px;fill:#4b5866}</style><svg xmlns="http://www.w3.org/2000/svg" width="1440" height="930" viewBox="0 0 1440 930" role="img" aria-labelledby="shared-order-pattern-title shared-order-pattern-desc"><title id="shared-order-pattern-title">shared-order-pattern</title><desc id="shared-order-pattern-desc">SO-1042 and SO-0917 share a product, category, depot and country. Their regions differ. Only SO-0917 has a HAD_ISSUE relationship.</desc><defs><filter id="shadow" x="-20%" y="-20%" width="140%" height="160%"><feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#233044" flood-opacity="0.10"/></filter><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#7c8792"/></marker></defs><rect width="100%" height="100%" fill="#fcfcfa"/>
+<path data-edge="CONTAINS" d="M 300 312 C 400 312 390 120 530 120" fill="none" stroke="#7c8792" stroke-width="1.8" marker-end="url(#arrow)"/>
+<text class="rel" text-anchor="middle" x="389" y="207" stroke="#fcfcfa" stroke-width="8" paint-order="stroke" stroke-linejoin="round">CONTAINS</text>
+<path data-edge="CONTAINS" d="M 1040 312 C 950 312 960 120 870 120" fill="none" stroke="#7c8792" stroke-width="1.8" marker-end="url(#arrow)"/>
+<text class="rel" text-anchor="middle" x="975" y="207" stroke="#fcfcfa" stroke-width="8" paint-order="stroke" stroke-linejoin="round">CONTAINS</text>
+<path data-edge="IN_CATEGORY" d="M 870 102 H 1040" fill="none" stroke="#7c8792" stroke-width="1.8" marker-end="url(#arrow)"/>
+<text class="rel" text-anchor="middle" x="955" y="88" stroke="#fcfcfa" stroke-width="8" paint-order="stroke" stroke-linejoin="round">IN_CATEGORY</text>
+<path data-edge="SHIPS_FROM" d="M 300 355 C 390 355 440 405 560 405" fill="none" stroke="#7c8792" stroke-width="1.8" marker-end="url(#arrow)"/>
+<text class="rel" text-anchor="middle" x="423" y="367" stroke="#fcfcfa" stroke-width="8" paint-order="stroke" stroke-linejoin="round">SHIPS_FROM</text>
+<path data-edge="SHIPS_FROM" d="M 1040 355 C 950 355 910 405 840 405" fill="none" stroke="#7c8792" stroke-width="1.8" marker-end="url(#arrow)"/>
+<text class="rel" text-anchor="middle" x="942" y="367" stroke="#fcfcfa" stroke-width="8" paint-order="stroke" stroke-linejoin="round">SHIPS_FROM</text>
+<path data-edge="SHIPS_TO" d="M 180 396 V 570" fill="none" stroke="#7c8792" stroke-width="1.8" marker-end="url(#arrow)"/>
+<text class="rel" text-anchor="middle" x="180" y="490" stroke="#fcfcfa" stroke-width="8" paint-order="stroke" stroke-linejoin="round">SHIPS_TO</text>
+<path data-edge="SHIPS_TO" d="M 1160 396 V 570" fill="none" stroke="#7c8792" stroke-width="1.8" marker-end="url(#arrow)"/>
+<text class="rel" text-anchor="middle" x="1160" y="490" stroke="#fcfcfa" stroke-width="8" paint-order="stroke" stroke-linejoin="round">SHIPS_TO</text>
+<path data-edge="IN_COUNTRY" d="M 300 625 C 410 625 440 724 560 724" fill="none" stroke="#7c8792" stroke-width="1.8" marker-end="url(#arrow)"/>
+<text class="rel" text-anchor="middle" x="420" y="675" stroke="#fcfcfa" stroke-width="8" paint-order="stroke" stroke-linejoin="round">IN_COUNTRY</text>
+<path data-edge="IN_COUNTRY" d="M 1040 625 C 945 625 930 724 840 724" fill="none" stroke="#7c8792" stroke-width="1.8" marker-end="url(#arrow)"/>
+<text class="rel" text-anchor="middle" x="946" y="675" stroke="#fcfcfa" stroke-width="8" paint-order="stroke" stroke-linejoin="round">IN_COUNTRY</text>
+<path data-edge="HAD_ISSUE" d="M 1280 340 H 1380 V 843 H 1280" fill="none" stroke="#7c8792" stroke-width="1.8" marker-end="url(#arrow)"/>
+<text class="rel" text-anchor="middle" x="1310" y="761" stroke="#fcfcfa" stroke-width="8" paint-order="stroke" stroke-linejoin="round">HAD_ISSUE</text>
+<text class="rel" text-anchor="middle" x="1310" y="785" stroke="#fcfcfa" stroke-width="8" paint-order="stroke" stroke-linejoin="round">note: string</text>
+<g data-node="Order"><rect x="60" y="284" width="240" height="112" rx="15" fill="#dceafa" stroke="#293342" stroke-opacity=".16" filter="url(#shadow)"/><text x="80" y="317" font-size="23" font-weight="600">Order</text>
+<text class="prop" x="80" y="347">name: SO-1042</text>
+<text class="prop" x="80" y="374">status: open</text>
+</g>
+<g data-node="Order"><rect x="1040" y="284" width="240" height="112" rx="15" fill="#dceafa" stroke="#293342" stroke-opacity=".16" filter="url(#shadow)"/><text x="1060" y="317" font-size="23" font-weight="600">Order</text>
+<text class="prop" x="1060" y="347">name: SO-0917</text>
+<text class="prop" x="1060" y="374">status: resolved</text>
+</g>
+<g data-node="Product"><rect x="530" y="60" width="340" height="85" rx="15" fill="#dff0df" stroke="#293342" stroke-opacity=".16" filter="url(#shadow)"/><text x="550" y="93" font-size="23" font-weight="600">Product</text>
+<text class="prop" x="550" y="123">name: cordless-table-lamp</text>
+</g>
+<g data-node="Category"><rect x="1040" y="60" width="240" height="85" rx="15" fill="#f4edc9" stroke="#293342" stroke-opacity=".16" filter="url(#shadow)"/><text x="1060" y="93" font-size="23" font-weight="600">Category</text>
+<text class="prop" x="1060" y="123">name: lamps</text>
+</g>
+<g data-node="Depot"><rect x="560" y="360" width="280" height="85" rx="15" fill="#fbe2cc" stroke="#293342" stroke-opacity=".16" filter="url(#shadow)"/><text x="580" y="393" font-size="23" font-weight="600">Depot</text>
+<text class="prop" x="580" y="423">name: east-london</text>
+</g>
+<g data-node="Region"><rect x="60" y="570" width="240" height="85" rx="15" fill="#d9f0ee" stroke="#293342" stroke-opacity=".16" filter="url(#shadow)"/><text x="80" y="603" font-size="23" font-weight="600">Region</text>
+<text class="prop" x="80" y="633">name: dublin</text>
+</g>
+<g data-node="Region"><rect x="1040" y="570" width="240" height="85" rx="15" fill="#d9f0ee" stroke="#293342" stroke-opacity=".16" filter="url(#shadow)"/><text x="1060" y="603" font-size="23" font-weight="600">Region</text>
+<text class="prop" x="1060" y="633">name: cork</text>
+</g>
+<g data-node="Country"><rect x="560" y="680" width="280" height="85" rx="15" fill="#e5e2fa" stroke="#293342" stroke-opacity=".16" filter="url(#shadow)"/><text x="580" y="713" font-size="23" font-weight="600">Country</text>
+<text class="prop" x="580" y="743">name: ireland</text>
+</g>
+<g data-node="Issue"><rect x="1000" y="800" width="280" height="85" rx="15" fill="#f7dfe4" stroke="#293342" stroke-opacity=".16" filter="url(#shadow)"/><text x="1020" y="833" font-size="23" font-weight="600">Issue</text>
+<text class="prop" x="1020" y="863">name: dispatch_hold</text>
+</g>
+</svg></html>
