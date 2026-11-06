@@ -1,0 +1,50 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><title>sales-order-schema</title><style>body{margin:0;background:#fcfcfa}svg{display:block}text{font-family:Arial,sans-serif;fill:#293342}.prop{font-family:Menlo,monospace;font-size:16px;fill:#45515e}.rel{font-family:Menlo,monospace;font-size:16px;fill:#4b5866}</style><svg xmlns="http://www.w3.org/2000/svg" width="1280" height="760" viewBox="0 0 1280 760" role="img" aria-labelledby="sales-order-schema-title sales-order-schema-desc"><title id="sales-order-schema-title">sales-order-schema</title><desc id="sales-order-schema-desc">Eight node labels and seven directed relationships. Every node has id and name; Order also has status. HAD_ISSUE has a note property.</desc><defs><filter id="shadow" x="-20%" y="-20%" width="140%" height="160%"><feDropShadow dx="0" dy="5" stdDeviation="6" flood-color="#233044" flood-opacity="0.10"/></filter><marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#7c8792"/></marker></defs><rect width="100%" height="100%" fill="#fcfcfa"/>
+<path data-edge="PLACED" d="M 240 340 H 350" fill="none" stroke="#7c8792" stroke-width="1.8" marker-end="url(#arrow)"/>
+<text class="rel" text-anchor="middle" x="295" y="326" stroke="#fcfcfa" stroke-width="8" paint-order="stroke" stroke-linejoin="round">PLACED</text>
+<path data-edge="CONTAINS" d="M 570 320 C 630 320 620 120 700 120" fill="none" stroke="#7c8792" stroke-width="1.8" marker-end="url(#arrow)"/>
+<text class="rel" text-anchor="middle" x="620" y="205" stroke="#fcfcfa" stroke-width="8" paint-order="stroke" stroke-linejoin="round">CONTAINS</text>
+<path data-edge="IN_CATEGORY" d="M 900 120 H 1050" fill="none" stroke="#7c8792" stroke-width="1.8" marker-end="url(#arrow)"/>
+<text class="rel" text-anchor="middle" x="975" y="106" stroke="#fcfcfa" stroke-width="8" paint-order="stroke" stroke-linejoin="round">IN_CATEGORY</text>
+<path data-edge="SHIPS_FROM" d="M 570 350 H 700" fill="none" stroke="#7c8792" stroke-width="1.8" marker-end="url(#arrow)"/>
+<text class="rel" text-anchor="middle" x="635" y="336" stroke="#fcfcfa" stroke-width="8" paint-order="stroke" stroke-linejoin="round">SHIPS_FROM</text>
+<path data-edge="SHIPS_TO" d="M 570 390 C 635 390 625 550 700 550" fill="none" stroke="#7c8792" stroke-width="1.8" marker-end="url(#arrow)"/>
+<text class="rel" text-anchor="middle" x="635" y="480" stroke="#fcfcfa" stroke-width="8" paint-order="stroke" stroke-linejoin="round">SHIPS_TO</text>
+<path data-edge="IN_COUNTRY" d="M 900 550 H 1050" fill="none" stroke="#7c8792" stroke-width="1.8" marker-end="url(#arrow)"/>
+<text class="rel" text-anchor="middle" x="975" y="536" stroke="#fcfcfa" stroke-width="8" paint-order="stroke" stroke-linejoin="round">IN_COUNTRY</text>
+<path data-edge="HAD_ISSUE" d="M 460 427 V 670 H 700" fill="none" stroke="#7c8792" stroke-width="1.8" marker-end="url(#arrow)"/>
+<text class="rel" text-anchor="middle" x="573" y="656" stroke="#fcfcfa" stroke-width="8" paint-order="stroke" stroke-linejoin="round">HAD_ISSUE</text>
+<text class="rel" text-anchor="middle" x="573" y="680" stroke="#fcfcfa" stroke-width="8" paint-order="stroke" stroke-linejoin="round">note: string</text>
+<g data-node="Customer"><rect x="40" y="285" width="200" height="112" rx="15" fill="#eee1f5" stroke="#293342" stroke-opacity=".16" filter="url(#shadow)"/><text x="60" y="318" font-size="23" font-weight="600">Customer</text>
+<text class="prop" x="60" y="348">id: integer</text>
+<text class="prop" x="60" y="375">name: string</text>
+</g>
+<g data-node="Order"><rect x="350" y="288" width="220" height="139" rx="15" fill="#dceafa" stroke="#293342" stroke-opacity=".16" filter="url(#shadow)"/><text x="370" y="321" font-size="23" font-weight="600">Order</text>
+<text class="prop" x="370" y="351">id: integer</text>
+<text class="prop" x="370" y="378">name: string</text>
+<text class="prop" x="370" y="405">status: string</text>
+</g>
+<g data-node="Product"><rect x="700" y="65" width="200" height="112" rx="15" fill="#dff0df" stroke="#293342" stroke-opacity=".16" filter="url(#shadow)"/><text x="720" y="98" font-size="23" font-weight="600">Product</text>
+<text class="prop" x="720" y="128">id: integer</text>
+<text class="prop" x="720" y="155">name: string</text>
+</g>
+<g data-node="Category"><rect x="1050" y="65" width="190" height="112" rx="15" fill="#f4edc9" stroke="#293342" stroke-opacity=".16" filter="url(#shadow)"/><text x="1070" y="98" font-size="23" font-weight="600">Category</text>
+<text class="prop" x="1070" y="128">id: integer</text>
+<text class="prop" x="1070" y="155">name: string</text>
+</g>
+<g data-node="Depot"><rect x="700" y="295" width="200" height="112" rx="15" fill="#fbe2cc" stroke="#293342" stroke-opacity=".16" filter="url(#shadow)"/><text x="720" y="328" font-size="23" font-weight="600">Depot</text>
+<text class="prop" x="720" y="358">id: integer</text>
+<text class="prop" x="720" y="385">name: string</text>
+</g>
+<g data-node="Region"><rect x="700" y="495" width="200" height="112" rx="15" fill="#d9f0ee" stroke="#293342" stroke-opacity=".16" filter="url(#shadow)"/><text x="720" y="528" font-size="23" font-weight="600">Region</text>
+<text class="prop" x="720" y="558">id: integer</text>
+<text class="prop" x="720" y="585">name: string</text>
+</g>
+<g data-node="Country"><rect x="1050" y="495" width="190" height="112" rx="15" fill="#e5e2fa" stroke="#293342" stroke-opacity=".16" filter="url(#shadow)"/><text x="1070" y="528" font-size="23" font-weight="600">Country</text>
+<text class="prop" x="1070" y="558">id: integer</text>
+<text class="prop" x="1070" y="585">name: string</text>
+</g>
+<g data-node="Issue"><rect x="700" y="620" width="200" height="112" rx="15" fill="#f7dfe4" stroke="#293342" stroke-opacity=".16" filter="url(#shadow)"/><text x="720" y="653" font-size="23" font-weight="600">Issue</text>
+<text class="prop" x="720" y="683">id: integer</text>
+<text class="prop" x="720" y="710">name: string</text>
+</g>
+</svg></html>

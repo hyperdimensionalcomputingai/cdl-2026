@@ -1,0 +1,32 @@
+[project]
+name = "cdl-2026"
+version = "0.1.0"
+description = "Graph + HDC masterclass companion for Connected Data London 2026"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "ipykernel>=6,<8",
+    "jupyterlab>=4,<5",
+    "lance-csr==0.6.1",
+    "lancedb==0.40.0",
+    "polars==1.40.1",
+    "pyarrow==26.0.1",
+    "pylance==13.0.0",
+    "torch==2.6.0",
+    "torch-hd==5.8.4",
+]
+
+[dependency-groups]
+dev = [
+    "nbclient>=0.10,<1",
+    "pytest>=8,<10",
+]
+
+# CPU-only torch on Linux, so installs don't pull multi-GB CUDA wheels.
+# macOS and Windows wheels on PyPI are already CPU-only.
+[tool.uv.sources]
+torch = [{ index = "pytorch-cpu", marker = "sys_platform == 'linux'" }]
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
