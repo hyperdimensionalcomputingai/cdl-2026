@@ -48,9 +48,15 @@ The pinned `lance-csr` release provides wheels for these platforms:
 | Platform | Requirement |
 |---|---|
 | Apple Silicon Mac | macOS 11 or later |
-| Linux x86_64 | glibc 2.28 or later, such as Ubuntu 20.04+ |
+| Linux x86_64 | glibc 2.28 or later, such as Ubuntu 20.04+, and an AVX2-capable CPU |
+| Linux ARM64 (aarch64) | glibc 2.28 or later, such as Ubuntu 20.04+ |
+| Windows x86_64 | 64-bit Windows and an AVX2-capable CPU |
 
-Intel Macs, native Windows and Linux ARM do not have wheels for this pinned release.
+**Windows x86_64 users do not need WSL2.** The setup command below installs the native
+Windows wheel for `lance-csr` 0.9.0 without compiling Rust. WSL2 remains an optional
+way to use the Linux wheel.
+
+Intel Macs and native Windows ARM64 do not have wheels for this pinned release.
 Use a supported machine for the workshop. For other environments, consult the
 [lance-csr source-build instructions](https://github.com/hyperdimensionalcomputingai/lance-csr/blob/main/python/README.md#installation)
 before the session.
