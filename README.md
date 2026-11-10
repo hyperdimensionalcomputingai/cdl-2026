@@ -66,11 +66,10 @@ Clone the repository and install the locked dependencies:
 ```bash
 git clone https://github.com/hyperdimensionalcomputingai/cdl-2026.git
 cd cdl-2026
-uv sync --locked --no-build-package lance-csr
+uv sync --locked
 ```
 
-The wheel-only option for `lance-csr` prevents an unexpected Rust source build. Linux uses
-CPU-only PyTorch wheels to avoid downloading CUDA dependencies. Allow the install to finish
+Linux uses CPU-only PyTorch wheels to avoid downloading CUDA dependencies. Allow the install to finish
 before arriving; the exercises use data included in the repository.
 
 ## Open the notebooks
