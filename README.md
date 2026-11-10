@@ -53,7 +53,7 @@ The pinned `lance-csr` release provides wheels for these platforms:
 | Windows x86_64 | 64-bit Windows and an AVX2-capable CPU |
 
 **Windows x86_64 users do not need WSL2.** The setup command below installs the native
-Windows wheel for `lance-csr` 0.9.0 without compiling Rust. WSL2 remains an optional
+Windows wheel for `lance-csr` 0.9.1 without compiling Rust. WSL2 remains an optional
 way to use the Linux wheel.
 
 Intel Macs and native Windows ARM64 do not have wheels for this pinned release.
